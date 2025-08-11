@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan H D - UI/UX Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-background">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-medium">Darshan H D</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <button data-scroll="hero" class="px-3 py-2 rounded-md transition-colors text-primary bg-accent">
+                            Home
+                        </button>
+                        <button data-scroll="about" class="px-3 py-2 rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                            About
+                        </button>
+                        <button data-scroll="portfolio" class="px-3 py-2 rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                            Portfolio
+                        </button>
+                        <button data-scroll="testimonials" class="px-3 py-2 rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                            Testimonials
+                        </button>
+                        <button data-scroll="contact" class="px-3 py-2 rounded-md transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                            Contact
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
+                    <button data-scroll="hero" class="block px-3 py-2 rounded-md w-full text-left transition-colors text-primary bg-accent">
+                        Home
+                    </button>
+                    <button data-scroll="about" class="block px-3 py-2 rounded-md w-full text-left transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                        About
+                    </button>
+                    <button data-scroll="portfolio" class="block px-3 py-2 rounded-md w-full text-left transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                        Portfolio
+                    </button>
+                    <button data-scroll="testimonials" class="block px-3 py-2 rounded-md w-full text-left transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                        Testimonials
+                    </button>
+                    <button data-scroll="contact" class="block px-3 py-2 rounded-md w-full text-left transition-colors text-muted-foreground hover:text-foreground hover:bg-accent">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <div class="mb-4">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground mb-4">
+                                Available for new projects
+                            </span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl mb-6">
+                            Hi, I'm Darshan H D
+                            <span class="block text-muted-foreground">UI/UX Designer</span>
+                        </h1>
+
+                        <p class="text-lg text-muted-foreground mb-8 max-w-2xl">
+                            I create beautiful, user-centered digital experiences that solve real problems. 
+                            With 1+ years of experience, I specialize in mobile apps, web platforms,User Interface and design systems.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <button data-scroll="portfolio" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-primary-foreground bg-primary hover:bg-primary/90 group">
+                                View My Work
+                                <svg class="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                </svg>
+                            </button>
+                            <button data-scroll="contact" class="inline-flex items-center px-6 py-3 border border-border text-base font-medium rounded-md text-foreground bg-transparent hover:bg-accent">
+                                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                Get In Touch
+                            </button>
+                            <button class="inline-flex items-center px-6 py-3 text-base font-medium rounded-md text-foreground hover:bg-accent">
+                                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                                </svg>
+                                Download CV
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="relative mx-auto w-80 h-80 lg:w-96 lg:h-96">
+                            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl"></div>
+                            <img src="backup/images/darshanhd.jpeg"
+                                alt="Darshan H D - UI/UX Designer"
+                                class="relative z-10 w-full h-full object-cover rounded-full border-4 border-background shadow-2xl"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground mb-4">
+                        About Me
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl mb-6">
+                        Passionate About Creating
+                        <span class="block text-muted-foreground">Meaningful Experiences</span>
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        With over 1 years of experience in UI/UX design, I've helped startups and established 
+                        companies create digital products that users love. My approach combines user research, 
+                        creative problem-solving, and attention to detail to deliver designs that not only look 
+                        great but also solve real user problems.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                    <div>
+                        <h3 class="text-xl mb-6">My Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">UI/UX Design</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Product Design</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Design Systems</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Prototyping</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">User Research</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Figma</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Adobe Creative Suite</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Sketch</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Principle</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Framer</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">photoshop</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">Illustrator</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">After Effects</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">HTML/CSS</span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary text-secondary-foreground">canva</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl mb-6">Experience Highlights</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-2 border-muted pl-4">
+                                <h4 class="font-medium">UI and Graphic Designer</h4>
+                                <p class="text-sm text-muted-foreground">InAmigos Foundation (NGO) • 2025 - 2025</p>
+                                <p class="text-sm mt-2">Created digital experiences for various clients across industries and supporting NGO, I helped 4 Months working a Company</p>
+                            </div>
+                            <div class="border-l-2 border-muted pl-4">
+                                <h4 class="font-medium">Designer</h4>
+                                <p class="text-sm text-muted-foreground">Skill Craft Technology • 2024 - 2025</p>
+                                <p class="text-sm mt-2">Created digital experiences for various clients across industries and supporting NGO, I helped 4 Months working a Company</p>
+                            </div>
+                            <div class="border-l-2 border-primary pl-4">
+                                <h4 class="font-medium">UI Designer</h4>
+                                <p class="text-sm text-muted-foreground">Poorna Oils - 2023-2024</p>
+                                <p class="text-sm mt-2">Working in a team of two people, Leading a design for mobile app, web products and UI design for this company located in Hassan.</p>
+                            </div>
+                            <div class="border-l-2 border-muted pl-4">
+                                <h4 class="font-medium">Product Designer</h4>
+                                <p class="text-sm text-muted-foreground">Sir How? company Banglore • 2022 - 2023</p>
+                                <p class="text-sm mt-2">Designed the complete a thumbnails and user experience designs for a Sir How? company</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl text-center mb-12">What I Do</h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3V1m0 20v-2M3 7h4M3 11h4M3 15h4"></path>
+                        </svg>
+                        <h4 class="font-medium mb-3">Brand Identity</h4>
+                        <p class="text-sm text-muted-foreground">Creating cohesive visual identities that tell your brand's story</p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                        <h4 class="font-medium mb-3">Mobile Design</h4>
+                        <p class="text-sm text-muted-foreground">Designing intuitive mobile experiences for iOS and Android</p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <h4 class="font-medium mb-3">Web Design</h4>
+                        <p class="text-sm text-muted-foreground">Crafting responsive web interfaces that work across all devices</p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="m22 21-3-3m0 0a5.5 5.5 0 1 0-7.78-7.78 5.5 5.5 0 0 0 7.78 7.78Z"></path>
+                        </svg>
+                        <h4 class="font-medium mb-3">User Research</h4>
+                        <p class="text-sm text-muted-foreground">Understanding user needs through research and testing</p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                        <h4 class="font-medium mb-3">Prototyping</h4>
+                        <p class="text-sm text-muted-foreground">Building interactive prototypes to validate design decisions</p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border bg-card text-card-foreground shadow-sm p-6 h-full hover:shadow-lg transition-shadow">
+                        <svg class="h-8 w-8 text-primary mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                        <h4 class="font-medium mb-3">Design Systems</h4>
+                        <p class="text-sm text-muted-foreground">Creating scalable design systems for consistent experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground mb-4">
+                        Portfolio
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl mb-6">
+                        Featured Projects
+                        <span class="block text-muted-foreground">Crafted with Care</span>
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Here's a selection of projects that showcase my approach to user-centered design, 
+                        from initial research to final implementation.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Mobile App UI Design"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    Mobile App Design
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                Mobile App UI Design
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                A comprehensive financial management app that helps users track expenses, set budgets, and achieve financial goals.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Mobile app UI Design</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">UX Research</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Prototyping</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-teal-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="E-commerce"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    Web Platform
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                E-commerce
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                An eco-friendly marketplace connecting sustainable brands with conscious consumers.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Web Design</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">E-commerce</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Design System</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="MindfulSpace Wellness"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    Mobile & Web
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                MindfulSpace Wellness
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                A meditation and wellness platform with guided sessions, progress tracking, and community features.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Cross-platform</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Wellness</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">UI Animation</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-red-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="TaskFlow Productivity"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    Web Application
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                TaskFlow Productivity
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                A project management tool designed for remote teams with real-time collaboration features.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Dashboard Design</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Collaboration</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Data Visualization</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="LearnHub Education"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    EdTech Platform
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                LearnHub Education
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                An online learning platform with interactive courses, progress tracking, and peer collaboration.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">EdTech</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Interactive Design</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Accessibility</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
+                        <div class="relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-orange-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            <img 
+                                src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="FoodieConnect Social"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                            />
+                            <div class="absolute top-4 left-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-background/80 backdrop-blur-sm text-secondary-foreground">
+                                    Social Platform
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-lg font-medium mb-2 group-hover:text-primary transition-colors">
+                                FoodieConnect Social
+                            </h3>
+                            <p class="text-sm text-muted-foreground mb-4 line-clamp-2">
+                                A social platform for food enthusiasts to share recipes, reviews, and culinary experiences.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-1 mb-4">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Social Media</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Content Strategy</span>
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground">Mobile First</span>
+                            </div>
+                            
+                            <button class="w-full inline-flex items-center justify-between px-4 py-2 text-sm font-medium rounded-md text-foreground hover:bg-primary hover:text-primary-foreground transition-colors">
+                                View Case Study
+                                <svg class="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <button class="inline-flex items-center px-6 py-3 border border-border text-base font-medium rounded-md text-foreground bg-transparent hover:bg-accent">
+                        <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                        View All Projects
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground mb-4">
+                        Testimonials
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl mb-6">
+                        What Clients Say
+                        <span class="block text-muted-foreground">About Working With Me</span>
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        I'm grateful to work with amazing clients who trust me to bring their visions to life. 
+                        Here's what some of them have to say about our collaboration.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-6 h-full hover:shadow-lg transition-shadow relative">
+                        <svg class="absolute top-4 right-4 h-6 w-6 text-muted-foreground/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="backup/images/WhatsApp Image 2025-07-31 at 3.06.04 PM.jpeg"
+                                alt="Ganesh Sai"
+                                class="w-12 h-12 rounded-full object-cover mr-4"
+                            />
+                            <div>
+                                <h4 class="font-medium">Ganesh Sai</h4>
+                                <p class="text-sm text-muted-foreground">
+                                    Design Lead at Knobly COnsulting
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-4">
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        </div>
+
+                        <p class="text-sm text-muted-foreground leading-relaxed">
+                            "Darshan H D s design work transformed our user experiinterface completely. Her attention to detail and user-centered approach resulted in a 40% increase in user engagement."
+                        </p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-6 h-full hover:shadow-lg transition-shadow relative">
+                        <svg class="absolute top-4 right-4 h-6 w-6 text-muted-foreground/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="backup/images/fahad.jpeg"
+                                alt="Mohammed Fahad Khan"
+                                class="w-12 h-12 rounded-full object-cover mr-4"
+                            />
+                            <div>
+                                <h4 class="font-medium">Mohammed Fahad Khan</h4>
+                                <p class="text-sm text-muted-foreground">
+                                    Executive Lead at ME-RIISE FOUNDATION
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-4">
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        </div>
+
+                        <p class="text-sm text-muted-foreground leading-relaxed">
+                            "Working with Darshan is a good personality for our company.He didn't just design beautiful interfaces, he helped us understand our users better and create meaningful experiences."
+                        </p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-6 h-full hover:shadow-lg transition-shadow relative">
+                        <svg class="absolute top-4 right-4 h-6 w-6 text-muted-foreground/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="backup/images/arunreddy.jpeg"
+                                alt="Arun Reddy"
+                                class="w-12 h-12 rounded-full object-cover mr-4"
+                            />
+                            <div>
+                                <h4 class="font-medium">Arun Reddy</h4>
+                                <p class="text-sm text-muted-foreground">
+                                    Senior Product Manager at Product Manager
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-4">
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        </div>
+
+                        <p class="text-sm text-muted-foreground leading-relaxed">
+                            "Darshan's design process is incredibly thorough. From research to final implementation, every decision was backed by data and user insights. The results speak for themselves."
+                        </p>
+                    </div>
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-6 h-full hover:shadow-lg transition-shadow relative">
+                        <svg class="absolute top-4 right-4 h-6 w-6 text-muted-foreground/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                        </svg>
+                        
+                        <div class="flex items-center mb-4">
+                            <img 
+                                src="backup/images/shreyas.png"
+                                alt="Shreyas Kumar"
+                                class="w-12 h-12 rounded-full object-cover mr-4"
+                            />
+                            <div>
+                                <h4 class="font-medium">Shreyas Kumar</h4>
+                                <p class="text-sm text-muted-foreground">
+                                    Software Developer at Knobly COnsulting
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex mb-4">
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        </div>
+
+                        <p class="text-sm text-muted-foreground leading-relaxed">
+                            "Darshan has an incredible ability to translate complex business requirements into simple, elegant design solutions. Her work elevated our brand and improved our conversion rates significantly."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <div class="inline-flex items-center gap-4 text-muted-foreground">
+                        <div class="flex">
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-yellow-400 fill-current" fill="currentColor" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <svg class="h-4 w-4 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                        </div>
+                        <span class="text-sm">Based on 6+ client reviews</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-transparent border border-border text-foreground mb-4">
+                        Contact
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl mb-6">
+                        Let's Work Together
+                        <span class="block text-muted-foreground">Get In Touch</span>
+                    </h2>
+                    <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
+                        Have a project in mind? I'd love to hear about it. 
+                        Let's discuss how we can create something amazing together.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-8">
+                        <h3 class="text-xl mb-6">Send Me a Message</h3>
+                        
+                        <form onsubmit="handleContactSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-foreground">Name</label>
+                                    <input 
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        class="mt-1 block w-full px-3 py-2 border border-border rounded-md shadow-sm bg-input-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring"
+                                    />
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-foreground">Email</label>
+                                    <input 
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        class="mt-1 block w-full px-3 py-2 border border-border rounded-md shadow-sm bg-input-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-foreground">Subject</label>
+                                <input 
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    required
+                                    class="mt-1 block w-.full px-3 py-2 border border-border rounded-md shadow-sm bg-input-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring"
+                                />
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-foreground">Message</label>
+                                <textarea 
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    required
+                                    class="mt-1 block w-full px-3 py-2 border border-border rounded-md shadow-sm bg-input-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring"
+                                ></textarea>
+                            </div>
+
+                            <button 
+                                type="submit" 
+                                id="submit-btn"
+                                class="w-full inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-primary-foreground bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ring"
+                            >
+                                <svg class="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                </svg>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl mb-6">Get In Touch</h3>
+                            <div class="space-y-4">
+                                <a 
+                                    href="mailto:iamdarshanhd03@gmail.com"
+                                    class="flex items-center p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 text-primary mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-medium">Email</p>
+                                        <p class="text-sm text-muted-foreground">iamdarshanhd03@gmail.com</p>
+                                    </div>
+                                </a>
+                                <a 
+                                    href="tel:080-9945747345"
+                                    class="flex items-center p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 text-primary mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-medium">Phone</p>
+                                        <p class="text-sm text-muted-foreground">+91-9945747345</p>
+                                    </div>
+                                </a>
+                                <a 
+                                    href="#"
+                                    class="flex items-center p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 text-primary mr-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                    <div>
+                                        <p class="font-medium">Location</p>
+                                        <p class="text-sm text-muted-foreground">Hassan,Karnataka, India</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl mb-6">Follow Me</h3>
+                            <div class="flex gap-4">
+                                <a 
+                                    href="https://www.linkedin.com/in/darshan-h-d-315455315/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center w-12 h-12 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                                <a 
+                                    href="https://web.whatsapp.com/send?phone=919945747345"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center w-12 h-12 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        
+                                    </svg>
+                                </a>
+                                <a 
+                                    href="https://dribbble.com/sarahchen"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center justify-center w-12 h-12 bg-muted rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors group"
+                                >
+                                    <svg class="h-5 w-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-card text-card-foreground rounded-lg border shadow-sm p-6 bg-gradient-to-br from-primary/5 to-accent/5">
+                            <h4 class="font-medium mb-2">Ready to Start a Project?</h4>
+                            <p class="text-sm text-muted-foreground mb-4">
+                                I'm currently available for new projects and would love to discuss your ideas.
+                            </p>
+                            <div class="flex items-center gap-2 text-sm text-primary">
+                                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                Available for new projects
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
